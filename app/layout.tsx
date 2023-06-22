@@ -54,13 +54,13 @@ import './globals.css';
 import NavBar from './navbar';
 import Link from "next/link";
 
-import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'] })
+import { Raleway } from 'next/font/google';
+const raleway = Raleway({ subsets: ['latin'] })
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={raleway.className}>
         <NavBar />
         {children}
       </body>
