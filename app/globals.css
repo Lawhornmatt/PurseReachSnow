@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-  /* #c6ddca = 198, 221, 202 = mint */
-  --background: 198, 221, 202;
+  /* #EDF5E6 = 237, 245, 230 = mint */
+  --background: 237, 245, 230;
 
   /* #1f1115 = 31, 17, 21 = cymru */
   --font: 31, 17, 21;
+  
+  /* #c6ddca = 198, 221, 202 = leaf */
+  --boxBackground: 198, 221, 202;
 
   /* #3E8674 = 62, 134, 116 = virid */
   --boxHighlight: 62, 134, 116;

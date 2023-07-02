@@ -7,12 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xsml: '360px'
+      },
       colors: {
         mint:   {
           DEFAULT:  'rgba(var(--background), <alpha-value>)'
         },
         cymru:  {
           DEFAULT:  'rgba(var(--font), <alpha-value>)'
+        },
+        leaf:   {
+          DEFAULT:  'rgba(var(--boxBackground), <alpha-value>)'
         },
         virid:  {
           DEFAULT:  'rgba(var(--boxHighlight), <alpha-value>)'
@@ -23,7 +29,11 @@ module.exports = {
         robin:  {
           DEFAULT:  'rgba(var(--projBox), <alpha-value>)'
         },
-      }
+      },
+      letterSpacing: {
+        logo: '1rem',
+        navbar: '.5rem',
+      },
     },
   },
   plugins: [],
