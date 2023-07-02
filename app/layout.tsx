@@ -48,22 +48,24 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-}
+};
 
 import './globals.css';
 import NavBar from './navbar';
 import Link from "next/link";
 
 import { Raleway } from 'next/font/google';
-const raleway = Raleway({ subsets: ['latin'] })
+const raleway = Raleway({ subsets: ['latin'] });
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
-        <NavBar />
+      <body className= {`${raleway.className} relative bg-mint text-cymru text-2xl`}>
+       <NavBar />
+       <div className="static">
         {children}
+       </div>
       </body>
     </html>
-  )
-}
+  );
+};

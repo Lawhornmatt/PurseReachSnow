@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #c6ddca;
-  --font: #1F1115;
+  /* #c6ddca = 198, 221, 202 = mint */
+  --background: 198, 221, 202;
 
+  /* #1f1115 = 31, 17, 21 = cymru */
+  --font: 31, 17, 21;
 
-  --greenspace: #c6ddca;
-  --brightspace: #edf5e6;
-  --borderbright: #e2fae6;
-  --spltcmp2: #1F1115;
-}
+  /* #3E8674 = 62, 134, 116 = virid */
+  --boxHighlight: 62, 134, 116;
+
+  /* #8DB3B3 = 141, 179, 179 = dew */
+  --boxGreyout: 141, 179, 179;
+
+  /* #A6D3D3 = 166, 211, 211 = robin */
+  --projBox: 166, 211, 211;
+
+  z-index: 10
+};
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #1b241d;
+    --background: #1b241d;
     --font: #edf5e6;
-  }
-}
+  };
+};
 
-body {
-  background-color: var(--foreground);
-  color: var(--font);
-
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-}
