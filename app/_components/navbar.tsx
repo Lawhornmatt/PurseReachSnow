@@ -6,9 +6,7 @@ import { useState } from "react";
 export default function NavBar() {
 
     const [isOpen, setOpen] = useState(false);
-    const toggleMenu = () => {
-        setOpen(!isOpen);
-    };
+    const toggleMenu = () => { setOpen(!isOpen) };
 
     return (
         <div>
@@ -42,6 +40,7 @@ export default function NavBar() {
             </nav>
 
             {/* NAVBAR FOR SCREENS WIDER THAN 360px */}
+            {/* Current use of drop-shadow-3xl looks bad */}
             <nav className= "hidden z-20 w-full xsml:flex flex-col xsml:fixed top-1 xsml:w-1/3 xsml:left-1 sm:w-48">
 
                 <Link className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center" href='#splash'>

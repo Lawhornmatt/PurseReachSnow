@@ -42,6 +42,9 @@ module.exports = {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 }
         }
+      },
+      dropShadow: {
+        '3xl': '0 1rem 0.5rem rgba(var(--background), 0.95)',
       }
     },
   },
