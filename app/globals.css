@@ -21,7 +21,7 @@
   /* #A6D3D3 = 166, 211, 211 = robin */
   --projBox: 166, 211, 211;
 
-  z-index: 10
+  z-index: 10;
 };
 
 @media (prefers-color-scheme: dark) {
