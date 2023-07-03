@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <section className="flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
+        <section id="skills" className="flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
   
           <article className="mt-4 mb-4">
             <h1 className="mb-4 flex-1 font-bold text-4xl text-center xsml:text-5xl">Skills</h1>

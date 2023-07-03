@@ -10,11 +10,11 @@ export default function NavBar() {
             </Link>
 
             {[
-               ['Projects', '/projects'],
-               ['Skills', '/skills'],
-               ['Bio', '/bio'],
-               ['Resumé', '/resume'],
-               ['Contact', '/contact'],
+               ['Projects', '#projects'],
+               ['Skills',   '#skills'],
+               ['Bio',      '#bio'],
+               ['Resumé',   '#resume'],
+               ['Contact',  '#contact'],
              ].map(([title, url]) => (
                <Link href={url} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">{title}</span></Link>
             ))}
