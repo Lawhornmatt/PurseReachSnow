@@ -1,13 +1,17 @@
+'use client'
 import Link from 'next/link';
-import Image from 'next/image';
-import DownArrow from '../../public/arrow-down-short.svg';
+import { useState } from "react";
+
 
 export default function NavBar() {
+
+    const [isOpen, setOpen] = useState(false);
+    const toggleMenu = () => setOpen(!isOpen);
+
     return (
         <div>
             {/* NAVBAR FOR SMALLEST OF SCREENS */}
-            <nav className= "z-20 w-full fixed flex flex-col xsml:hidden top-1 xsml:w-1/3 xsml:left-1">
-
+            <nav className= "z-30 w-full fixed flex flex-col xsml:hidden top-1 xsml:w-1/3 xsml:left-1">
 
                 <button className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center">
                     <span className= "tracking-logo">MTL</span>
@@ -19,16 +23,15 @@ export default function NavBar() {
                     </svg>
                 </button>
 
-                <Link href="#splash" className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">Top</span></Link>
-
                 {[
+                   ['Top',       '#splash'],
                    ['Projects', '#projects'],
                    ['Skills',   '#skills'],
                    ['Bio',      '#bio'],
                    ['Resumé',   '#resume'],
                    ['Contact',  '#contact'],
                  ].map(([title, url]) => (
-                   <Link href={url} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">{title}</span></Link>
+                   <Link href={url} className="hidden bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">{title}</span></Link>
                 ))}
 
             </nav>
@@ -55,3 +58,38 @@ export default function NavBar() {
         </div>
     )
 };
+
+// Interesting animation learned from here https://onesheep.org/insights/animate-on-scroll-with-tailwind-css
+/*
+// Get all the elements you want to show on scroll
+const targets = document.querySelectorAll(".js-show-on-scroll");
+
+// Callback for IntersectionObserver
+const callback = function(entries: any[]) {
+  entries.forEach(entry => {
+
+    // Is the element in the viewport?
+    if (entry.isIntersecting) {
+
+      // Add the fadeIn class:
+      entry.target.classList.add("motion-safe:animate-fadeIn");
+    } else {
+
+      // Otherwise remove the fadein class
+      entry.target.classList.remove("motion-safe:animate-fadeIn");
+    }
+  });
+};
+
+// Set up a new observer
+const observer = new IntersectionObserver(callback);
+
+// Loop through each of the target
+targets.forEach(function(target) {
+  // Hide the element
+  target.classList.add("opacity-0");
+
+  // Add the element to the watcher
+  observer.observe(target);
+});
+*/
