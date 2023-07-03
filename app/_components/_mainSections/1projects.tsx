@@ -1,6 +1,6 @@
 export default function Projects() {
     return (
-      <section id="projects" className="js-show-on-scroll flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
+      <section id="projects" className="flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
 
         <article className="mt-4 mb-4">
           <h1 className="mb-4 flex-1 font-bold text-4xl text-center xsml:text-5xl">Projects</h1>
@@ -10,3 +10,4 @@ export default function Projects() {
       </section>
     )
   };
+
