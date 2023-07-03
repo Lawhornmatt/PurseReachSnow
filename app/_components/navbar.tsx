@@ -5,7 +5,7 @@ export default function NavBar() {
         <nav className= "z-20 w-full flex flex-col xsml:fixed top-1 xsml:w-1/3 xsml:left-1">
 
 
-            <Link className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center" href='/'>
+            <Link className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center" href='#splash'>
                 <span className= "tracking-logo">MT</span><span>L</span>
             </Link>
 

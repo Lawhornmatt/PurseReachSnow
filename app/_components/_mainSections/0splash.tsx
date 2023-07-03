@@ -1,6 +1,6 @@
 export default function Splash() {
     return (
-      <section className="flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
+      <section id="splash" className="flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
         <div className= "hidden xsml:block w-1/3 left-1 flex-none">
           {/* This div saves space for the inital nav bar */}
         </div>
