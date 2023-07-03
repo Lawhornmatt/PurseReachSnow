@@ -61,7 +61,7 @@ const raleway = Raleway({ subsets: ['latin'] });
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className= {`${raleway.className} flex flex-col bg-mint text-cymru sm:text-2xl`}>
+      <body className= {`${raleway.className} flex flex-col bg-mint text-cymru sm:text-2xl motion-safe:animate-fadeIn`}>
        <NavBar />
         {children}
       </body>
