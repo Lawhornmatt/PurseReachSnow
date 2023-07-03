@@ -51,8 +51,9 @@ export const metadata = {
 };
 
 import './globals.css';
-import NavBar from './navbar';
 import Link from "next/link";
+
+import NavBar from './_components/navbar';
 
 import { Raleway } from 'next/font/google';
 const raleway = Raleway({ subsets: ['latin'] });
@@ -62,9 +63,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
     <html lang="en">
       <body className= {`${raleway.className} flex flex-col bg-mint text-cymru sm:text-2xl`}>
        <NavBar />
-       <div className="">
         {children}
-       </div>
       </body>
     </html>
   );

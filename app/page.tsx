@@ -1,15 +1,19 @@
-import Image from 'next/image'
+import Splash from './_components/_mainSections/0splash';
+import Projects from './_components/_mainSections/1projects';
+import Skills from './_components/_mainSections/2skills';
+import Bio from './_components/_mainSections/3bio';
+import Resume from './_components/_mainSections/4resume';
+import Contact from './_components/_mainSections/5contact';
 
-export default function Home() {
+export default function SinglePageMainScroll() {
   return (
-    <main className="flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
-      <div className= "hidden xsml:block w-56 flex-none">
-        {/* This div saves space for the inital nav bar */}
-      </div>
-      <div>
-        <h1 className="flex-1 font-bold text-6xl">Matthew Lawhorn</h1>
-        <p>Full-stack Developer interested in data science & geology, open source software, and building better online communities</p>
-      </div>
+    <main>
+      <Splash />
+      <Projects />
+      <Skills />
+      <Bio />
+      <Resume />
+      <Contact />
     </main>
   )
-}
+};
