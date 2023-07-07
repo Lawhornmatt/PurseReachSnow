@@ -1,24 +1,16 @@
+'use client'
 import Link from 'next/link';
+import { useState } from "react";
 
 export default function PassGen() {
     return (
-        <Link href='' className='col-span-2 flex flex-row justify-between items-center rounded-md w-fill bg-robin'>
+      <section className='col-span-2 flex flex-row items-center rounded-md bg-robin'>
             
-        {/* Wraps SVG Icon */}
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="2.25rem" height="2.25rem" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="2.25rem" height="2.25rem" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+        </svg>
 
-        <h1 className='text-xl'>Password Generator</h1>
-
-        <div className='flex flex-col px-1 text-center rounded-md text-xs bg-cymru text-mint'>
-          <p>R</p>
-          <p>E</p>
-          <p>P</p>
-          <p>O</p>
-        </div>
-      </Link>  
+        <h1 className='text-xl flex-1 text-center'>Password Generator</h1>
+      </section>  
     )
   };
