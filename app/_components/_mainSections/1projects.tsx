@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 // Components 
 import PassGen from '../_projects/passgen';
+import RepoButton from '../_pieces/repobutton';
 
 // Icons 
 import BurgerIcon from '../_icons/burger';
@@ -19,43 +20,63 @@ export default function Projects() {
 
           {/* <PassGen /> */}
 
-          {/* === Project 1 === */}
-          <Link href='' className='col-span-2 flex flex-row p-1 justify-between items-center rounded-md w-fill bg-robin'>
-
-            <BurgerIcon />
-
-            <h1 className='text-xl'>Project 1</h1>
-
-            <div className='flex flex-col px-1 text-center rounded-md text-xs bg-cymru text-mint'>
-              <p>R</p>
-              <p>E</p>
-              <p>P</p>
-              <p>O</p>
-            </div>
-          </Link>  
-          
-          {/* === Project 2 === */}
-          <Link href='' className='col-span-2 flex flex-row p-1 justify-between items-center rounded-md w-fill bg-robin'>
-
-            <BurgerIcon />
-
-            <h1 className='text-xl'>Project 2</h1>
-
-            <Link href='' className='flex flex-col px-1 text-center rounded-md text-xs bg-cymru text-mint'>
-              <p>R</p>
-              <p>E</p>
-              <p>P</p>
-              <p>O</p>
-            </Link>
-          </Link> 
-
-          <div>
+          <div className='col-span-2 flex flex-col'>
             {[
-                ['Top',       '#splash'],
-              ].map(([title, url]) => (
-                <Link href={url} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center">
-                  <span className="sm:tracking-navbar">{title}</span>
-                </Link>
+                ['JukeBox', 
+                'https://jukebox-project3.herokuapp.com/', 
+                'https://github.com/Lawhornmatt/Jukebox-vite', 
+                'React App, Vite Dev Server, MERN stack, GraphQL, Express',
+                <SoundIcon />],
+
+                ['JATE', 
+                'https://lawhorn-jate-editor.herokuapp.com/', 
+                'https://github.com/Lawhornmatt/PWA_TextEditor',
+                'JWA (Progressive Web App)',
+                <TextIcon />],
+
+                ['RecipeIO', 
+                'https://recipeio-project2.herokuapp.com/login', 
+                'https://github.com/Lawhornmatt/RecipeIO',
+                'Javascript, HTML, CSS, Express, Sequelize, Handlebars, Bcrypt',
+                <FileIcon />],
+
+                ['Boiler Maker', 
+                'https://github.com/Lawhornmatt/BoilerMaker', 
+                'https://github.com/Lawhornmatt/BoilerMaker',
+                'Node.js',
+                <FileIcon />],
+
+                ['Tech Blog', 
+                'https://techblog-lawhornmatt.herokuapp.com/', 
+                'https://github.com/Lawhornmatt/TechBlog',
+                '',
+                <FileIcon />],
+
+                ['Schedutron-3000', 
+                'https://lawhornmatt.github.io/DayScheduler/', 
+                'https://github.com/Lawhornmatt/DayScheduler',
+                '',
+                <FileIcon />],
+
+                ['Quiz Machine', 
+                'https://lawhornmatt.github.io/TakeThisQuiz/', 
+                'https://github.com/Lawhornmatt/TakeThisQuiz',
+                '',
+                <FileIcon />],
+
+              ].map(([title, deployURL, repoURL, description, icon]) => (
+                <Link href={deployURL} className='flex flex-row p-1 my-2 justify-between items-center rounded-md w-fill bg-robin'>
+                  {icon}
+                
+                  <div className='flex-1 pl-2'>
+                    <h1 className='text-2xl font-medium'>{title}</h1>
+                    <p className='text-sm font-normal italic'>{description}</p>
+                  </div>
+                
+                  <Link href={repoURL}>
+                    <RepoButton />
+                  </Link>
+                </Link>  
             ))}
           </div>
       </section>
