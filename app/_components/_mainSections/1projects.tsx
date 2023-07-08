@@ -1,5 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
 import PassGen from '../_projects/passgen';
+import BurgerIcon from '../_icons/burger';
 
 export default function Projects() {
     return (
@@ -7,17 +10,12 @@ export default function Projects() {
 
           <h1 className="col-span-2 mb-2 text-virid italic flex-1 font-light text-3xl text-left xsml:text-5xl">Projects</h1>
 
-          <PassGen />
+          {/* <PassGen /> */}
 
           {/* === Project 1 === */}
           <Link href='' className='col-span-2 flex flex-row p-1 justify-between items-center rounded-md w-fill bg-robin'>
-            
-            {/* Wraps SVG Icon */}
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="2.25rem" height="2.25rem" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-            </div>
+
+            <BurgerIcon />
 
             <h1 className='text-xl'>Project 1</h1>
 
@@ -31,24 +29,28 @@ export default function Projects() {
           
           {/* === Project 2 === */}
           <Link href='' className='col-span-2 flex flex-row p-1 justify-between items-center rounded-md w-fill bg-robin'>
-            
-            {/* Wraps SVG Icon */}
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="2.25rem" height="2.25rem" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-            </div>
+
+            <BurgerIcon />
 
             <h1 className='text-xl'>Project 2</h1>
 
-            <div className='flex flex-col px-1 text-center rounded-md text-xs bg-cymru text-mint'>
+            <Link href='' className='flex flex-col px-1 text-center rounded-md text-xs bg-cymru text-mint'>
               <p>R</p>
               <p>E</p>
               <p>P</p>
               <p>O</p>
-            </div>
+            </Link>
           </Link> 
 
+          <div>
+            {[
+                ['Top',       '#splash'],
+              ].map(([title, url]) => (
+                <Link href={url} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center">
+                  <span className="sm:tracking-navbar">{title}</span>
+                </Link>
+            ))}
+          </div>
       </section>
     )
   };
