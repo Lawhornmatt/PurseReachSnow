@@ -1,11 +1,11 @@
 export default function Skills() {
     return (
-        <section id="skills" className="scroll-mt-20 flex w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
+        <section id="skills" className="scroll-mt-20 grid grid-cols-2 lg:grid-cols-3 gap-4 w-fill px-2 mt-16 mb-4 sm:px-16 sm:font-medium sm:text-4xl">
   
-          <article className="mt-4 mb-4">
-            <h1 className="mb-4 flex-1 font-bold text-4xl text-center xsml:text-5xl">Skills</h1>
-            <p className="text-2xl text-center xsml:text-left xsml:ml-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis tincidunt ornare. Curabitur non nisl molestie, volutpat leo vitae, vulputate est. In hac habitasse platea dictumst. Etiam et arcu vel felis dignissim dapibus. Nunc eu lobortis nibh, a lobortis leo. Quisque nunc arcu, finibus a maximus eget, luctus vel elit. Quisque ornare pellentesque nisi, a mollis mi laoreet in. Fusce rutrum, lorem eget vehicula porttitor, orci sem cursus lacus, ut sagittis nisi nisi aliquet diam. Donec sed est nunc. Sed rhoncus non tortor sit amet cursus.</p>
-          </article>
+          <div className='col-span-2 lg:col-span-3 flex flex-col'>
+            <h1 className="text-virid italic flex-1 font-light text-3xl text-left xsml:text-5xl">Skills</h1>
+            <p className='mb-2 text-cymru italic flex-1 font-light text-md text-left xsml:text-xl'>The tools I use everyday:</p>
+          </div>
   
         </section>
       )

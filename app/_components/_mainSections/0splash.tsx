@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-import GitHubIcon from '../_icons/github';
-import LinkedInIcon from '../_icons/linkedin';
-import MastodonIcon from '../_icons/mastodon';
+import GitHubIcon from '../_icons/_brands/github';
+import LinkedInIcon from '../_icons/_brands/linkedin';
+import MastodonIcon from '../_icons/_brands/mastodon';
 
 export default function Splash() {
     return (
