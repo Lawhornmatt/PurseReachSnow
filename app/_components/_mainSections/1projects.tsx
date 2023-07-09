@@ -4,6 +4,7 @@ import Image from 'next/image';
 // Components 
 import PassGen from '../_projects/passgen';
 import RepoButton from '../_pieces/repobutton';
+import SkillList from '../_pieces/skilllist';
 
 // Icons 
 import BurgerIcon from '../_icons/burger';
@@ -11,10 +12,6 @@ import TextIcon from '../_icons/text';
 import LockIcon from '../_icons/lock';
 import SoundIcon from '../_icons/sound';
 import FileIcon from '../_icons/fileicon';
-import AstroIcon from '../_icons/_tech/astro';
-
-import HTMLIcon from '../_icons/_tech/html';
-import NextIcon from '../_icons/_tech/next';
 
 // function repeatSome() {
 //   for (let i = 0; i = 10; i++) {
@@ -35,20 +32,7 @@ export default function Projects() {
             </h2>
           </div>
 
-          <div className='col-span-2 lg:col-span-3 flex flex-col'>
-
-            <h2 className='text-cymru flex-1 font-light text-lg text-left xsml:text-xl'>
-              What I am best at:
-            </h2>
-
-            <div className='flex flex-row flex-wrap gap-1'>
-              <div className='p-2 flex flex-row justify-between items-center border-solid border-2 border-cymru rounded-md'>
-                <HTMLIcon />
-                <p className='text-cymru text-center font-light text-md text-left xsml:text-xl'>HTML</p>
-              </div>
-            </div>  
-
-          </div>
+          <SkillList />
 
           {/* <PassGen /> */}
 
