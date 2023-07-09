@@ -11,6 +11,7 @@ import TextIcon from '../_icons/text';
 import LockIcon from '../_icons/lock';
 import SoundIcon from '../_icons/sound';
 import FileIcon from '../_icons/fileicon';
+import AstroIcon from '../_icons/_tech/astro';
 
 import HTMLIcon from '../_icons/_tech/html';
 import NextIcon from '../_icons/_tech/next';
