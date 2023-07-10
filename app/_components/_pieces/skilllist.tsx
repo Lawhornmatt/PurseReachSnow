@@ -20,11 +20,11 @@ export default function SkillList() {
     return (
         <div className='col-span-2 lg:col-span-3 flex flex-col'>
 
-            <h2 className='text-cymru flex-1 font-light text-lg text-left xsml:text-xl'>
-              What I am best at:
+            <h2 className='mb-2 italic text-cymru flex-1 font-light text-lg text-left xsml:text-xl'>
+              Tech I'm best at:
             </h2>
 
-            <div className='flex flex-row flex-wrap gap-1'>
+            <div className='flex flex-row justify-center flex-wrap gap-1'>
                 {[
                     [<AstroIcon />, 'AstroJS'],
                     [<CSSIcon />, 'CSS3'],
@@ -46,17 +46,10 @@ export default function SkillList() {
                 ].map(([icon, skill]) => (
                     <div className='p-2 flex flex-row justify-between items-center border-solid border-2 border-cymru rounded-md'>
                         {icon}
-                        <p className='text-cymru text-center font-light text-md text-left xsml:text-xl'>{skill}</p>
+                        <p className='pl-1 text-cymru text-center font-light text-md text-left xsml:text-xl'>{skill}</p>
                     </div>
                 ))}
             </div>  
         </div>
     )
 };
-
-/*
-<div className='p-2 flex flex-row justify-between items-center border-solid border-2 border-cymru rounded-md'>
-  <HTMLIcon />
-  <p className='text-cymru text-center font-light text-md text-left xsml:text-xl'>HTML</p>
-</div>
-*/

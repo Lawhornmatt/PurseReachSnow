@@ -1,17 +1,13 @@
-import Splash from './_components/_mainSections/0splash';
-import Projects from './_components/_mainSections/1projects';
-import Skills from './_components/_mainSections/2skills';
-import Bio from './_components/_mainSections/3bio';
-import Resume from './_components/_mainSections/4resume';
-import Contact from './_components/_mainSections/5contact';
+import Splash from './_components/_mainSections/splash';
+import Projects from './_components/_mainSections/projects';
+import Resume from './_components/_mainSections/resume';
+import Contact from './_components/_mainSections/contact';
 
 export default function SinglePageMainScroll() {
   return (
     <main>
       <Splash />
       <Projects />
-      <Skills />
-      <Bio />
       <Resume />
       <Contact />
     </main>

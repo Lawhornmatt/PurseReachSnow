@@ -15,7 +15,6 @@ export default function NavBar() {
 
                 <button onClick={toggleMenu} className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center">
                     <span className= "tracking-logo">MTL</span>
-
                     <BurgerIcon />
                 </button>
                 
