@@ -18,7 +18,7 @@ export default function Splash() {
           Full-stack Developer interested in data science & geology, open source software, and building better online communities */}
           
           {/* Short blurb for mobile view */}
-          <p className="md:hidden text-2xl text-right">
+          <p className="md:hidden text-2xl text-center">
             Full-stack Developer specializing in MERN tech stack, interested in open source software and building better online communities
           </p>
           
