@@ -26,7 +26,7 @@ export default function Projects() {
 
         <SkillList />
 
-        <div className='col-span-2 lg:col-span-3 flex flex-col'>
+        <div id='bio' className='col-span-2 lg:col-span-3 flex flex-col'>
           <h2 className='mb-2 text-cymru italic flex-1 font-light text-md text-left xsml:text-xl'>
             A gist of what I do:
           </h2>

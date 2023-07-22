@@ -20,7 +20,9 @@ export default function DesktopNav() {
                ['Resumé',   '#resume'],
                ['Contact',  '#contact'],
              ].map(([title, url]) => (
-               <Link href={url} className="bg-leaf w-1/6 h-16 text-2xl md:text-3xl mb-1 ml-1 text-center flex items-center justify-center"><span className="lg:tracking-navbar">{title}</span></Link>
+                <Link href={url} className="bg-leaf w-1/6 min-h-[15%] text-2xl md:text-3xl mb-1 ml-1 text-center flex items-center justify-center">
+                    <span className="lg:tracking-navbar">{title}</span>
+                </Link>
             ))}
         </nav>
     )

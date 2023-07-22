@@ -18,7 +18,7 @@ import ViteIcon from "../_icons/_tech/vite";
 
 export default function SkillList() {
     return (
-        <div className='col-span-2 lg:col-span-3 flex flex-col'>
+        <div id='skills' className='col-span-2 lg:col-span-3 flex flex-col'>
 
             <h2 className='mb-2 italic text-cymru flex-1 font-light text-lg text-left xsml:text-xl'>
               Tech I'm best at:

@@ -6,30 +6,31 @@ import MastodonIcon from '../_icons/_brands/mastodon';
 
 export default function Splash() {
     return (
-      <section id="splash" className="flex flex-col xsml:flex-row w-screen sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
-        <div className= "h-16 xsml:w-1/3 xsml:h-auto left-1 flex-none">
-          {/* Purely organizational div; saves space for the inital nav bar */}
-        </div>
-        <article className="mt-4 mb-4">
+      // min-h-[80%] space-y-16
+      <section id='splash' className="md:min-h-[85vh] flex flex-col gap-4 md:flex-row-reverse mt-20 md:mt-0 md:p-16 sm:font-medium sm:text-4xl">
 
-          <h1 className="mb-4 flex-1 font-bold text-4xl text-center xsml:text-5xl">Matthew Lawhorn</h1>
-          <p className="text-2xl text-center px-4 xsml:text-left xsml:ml-2">Full-stack Developer interested in data science & geology, open source software, and building better online communities</p>
-
-          <div className="flex justify-around mt-4">
-            <Link href="https://github.com/Lawhornmatt">
-              <GitHubIcon />
-            </Link>
-
-            <Link href="https://www.linkedin.com/in/matthew-lawhorn/">
-              <LinkedInIcon />
-            </Link>
-
-            <Link href="https://federate.social/@lawhornmatt">
-              <MastodonIcon />
-            </Link>
-          </div>
-
+        <article className="md:w-2/3 flex flex-col">
+          <h1 className="mb-4 font-bold text-4xl xsml:text-5xl lg:text-6xl xl:text-7xl text-center md:text-right">Matthew Lawhorn</h1>
+          <p className="text-2xl text-center md:text-right">Full-stack Developer interested in data science & geology, open source software, and building better online communities</p>
         </article>
+
+        <div className= "md:w-1/3 flex flex-col gap-8 justify-around text-2xl sm:tracking-navbar">
+          <Link className="flex gap-6 justify-center md:justify-normal" href="https://github.com/Lawhornmatt">
+              <GitHubIcon />
+              <span className='md:text-3xl'>Git Hub</span>
+            </Link>
+
+            <Link className="flex gap-6 justify-center md:justify-normal" href="https://www.linkedin.com/in/matthew-lawhorn/">
+              <LinkedInIcon />
+              <span className='md:text-3xl'>LinkedIn</span>
+            </Link>
+
+            <Link className="flex gap-6 justify-center md:justify-normal" href="https://federate.social/@lawhornmatt">
+              <MastodonIcon />
+              <span className='md:text-3xl'>Mastodon</span>
+            </Link>
+        </div>
+
       </section>
     )
   };
