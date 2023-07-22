@@ -11,7 +11,7 @@ export default function MobileNav() {
     return (
         <div>
             {/* NAVBAR FOR SMALLEST OF SCREENS */}
-            <nav className= "z-30 w-full fixed flex flex-col xsml:hidden top-1 xsml:w-1/3 xsml:left-1">
+            <nav className= "z-30 w-full fixed flex flex-col sm:hidden top-1 sm:w-1/3 sm:left-1">
 
                 <button onClick={toggleMenu} className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center">
                     <span className= "tracking-logo">MTL</span>
