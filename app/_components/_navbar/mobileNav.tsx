@@ -9,31 +9,27 @@ export default function MobileNav() {
     const toggleMenu = () => { setOpen(!isOpen) };
 
     return (
-        <div>
-            {/* NAVBAR FOR SMALLEST OF SCREENS */}
-            <nav className= "z-30 w-full fixed flex flex-col sm:hidden top-1 sm:w-1/3 sm:left-1">
-
-                <button onClick={toggleMenu} className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center">
-                    <span className= "tracking-logo">MTL</span>
-                    <BurgerIcon />
-                </button>
-                
-                {isOpen && (
-                    <div>
-                        {[
-                           ['Top',       '#splash'],
-                           ['Projects', '#projects'],
-                           ['Skills',   '#skills'],
-                           ['Bio',      '#bio'],
-                           ['Resumé',   '#resume'],
-                           ['Contact',  '#contact'],
-                         ].map(([title, url]) => (
-                           <Link onClick={toggleMenu} href={url} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">{title}</span></Link>
-                        ))}
-                    </div>
-                )}
-            </nav>
-        </div>
+          <nav className= "z-30 w-full fixed flex flex-col sm:hidden top-1 sm:w-1/3 sm:left-1">
+              <button onClick={toggleMenu} className= "bg-virid text-mint w-full h-16 text-4xl mb-1 mr-1 text-center flex items-center justify-center">
+                  <span className= "tracking-logo">MTL</span>
+                  <BurgerIcon />
+              </button>
+              
+              {isOpen && (
+                  <div>
+                      {[
+                         ['Top',       '#splash'],
+                         ['Projects', '#projects'],
+                        //  ['Skills',   '#skills'],
+                         ['Bio',      '#bio'],
+                         ['Resumé',   '#resume'],
+                         ['Contact',  '#contact'],
+                       ].map(([title, url]) => (
+                         <Link onClick={toggleMenu} href={url} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">{title}</span></Link>
+                      ))}
+                  </div>
+              )}
+          </nav>
     )
 };
 
