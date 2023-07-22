@@ -54,7 +54,6 @@ import './globals.css';
 import Link from "next/link";
 
 import MobileNav from './_components/_navbar/mobileNav';
-import DesktopNav from './_components/_navbar/desktopNav';
 
 import { Raleway } from 'next/font/google';
 const raleway = Raleway({ subsets: ['latin'] });
@@ -63,8 +62,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
   return (
     <html lang="en">
       <body className= {`${raleway.className} flex flex-col bg-mint text-cymru sm:text-2xl motion-safe:animate-fadeIn`}>
-       <MobileNav />
-       <DesktopNav />
+       {/* <MobileNav /> */}
         {children}
       </body>
     </html>
