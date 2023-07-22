@@ -9,7 +9,7 @@ export default function DesktopNav() {
     const stuckVariable = inView ? '' : 'shadow-lg';
 
     return (
-        <nav ref={ref} className={`-top-[1px] h-16 hidden bg-mint sm:flex sticky w-full ${stuckVariable}`}>
+        <nav ref={ref} className={`-top-[1px] min-h-[10vh] hidden bg-mint sm:flex sticky w-full ${stuckVariable}`}>
             <Link className= "bg-virid text-mint w-1/6 text-3xl text-center flex items-center justify-center" href='#splash'>
                 <span className= "tracking-logo">MT</span><span>L</span>
             </Link>
