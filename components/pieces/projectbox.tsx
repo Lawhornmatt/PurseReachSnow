@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import RepoButton from '../_pieces/repobutton';
+import RepoButton from '../pieces/repobutton';
 
 /*
 Maybe Solution here:

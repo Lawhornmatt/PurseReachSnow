@@ -1,8 +1,8 @@
-import Splash from './_components/_mainSections/splash';
-import DesktopNav from './_components/_navbar/desktopNav';
-import Projects from './_components/_mainSections/projects';
-import Resume from './_components/_mainSections/resume';
-import Contact from './_components/_mainSections/contact';
+import Splash from '../components/mainSections/splash';
+import DesktopNav from '../components/navbar/desktopNav';
+import Projects from '../components/mainSections/projects';
+import Resume from '../components/mainSections/resume';
+import Contact from '../components/mainSections/contact';
 
 export default function SinglePageMainScroll() {
   return (

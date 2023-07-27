@@ -1,20 +1,20 @@
-import AstroIcon from "../_icons/_tech/astro";
-import CSSIcon from "../_icons/_tech/css";
-import ElectronIcon from "../_icons/_tech/electron";
-import GitIcon from "../_icons/_tech/git";
-import GraphQLIcon from "../_icons/_tech/graphql";
-import HTMLIcon from "../_icons/_tech/html";
-import JSIcon from "../_icons/_tech/javascript";
-import JestIcon from "../_icons/_tech/jest";
-import JQueryIcon from "../_icons/_tech/jquery";
-import MongoIcon from "../_icons/_tech/mongo";
-import MySQLIcon from "../_icons/_tech/mysql";
-import NextIcon from "../_icons/_tech/next";
-import NodeIcon from "../_icons/_tech/node";
-import ReactIcon from "../_icons/_tech/react";
-import TailwindIcon from "../_icons/_tech/tailwind";
-import TSIcon from "../_icons/_tech/typescript";
-import ViteIcon from "../_icons/_tech/vite";
+import AstroIcon from "../icons/tech/astro";
+import CSSIcon from "../icons/tech/css";
+import ElectronIcon from "../icons/tech/electron";
+import GitIcon from "../icons/tech/git";
+import GraphQLIcon from "../icons/tech/graphql";
+import HTMLIcon from "../icons/tech/html";
+import JSIcon from "../icons/tech/javascript";
+import JestIcon from "../icons/tech/jest";
+import JQueryIcon from "../icons/tech/jquery";
+import MongoIcon from "../icons/tech/mongo";
+import MySQLIcon from "../icons/tech/mysql";
+import NextIcon from "../icons/tech/next";
+import NodeIcon from "../icons/tech/node";
+import ReactIcon from "../icons/tech/react";
+import TailwindIcon from "../icons/tech/tailwind";
+import TSIcon from "../icons/tech/typescript";
+import ViteIcon from "../icons/tech/vite";
 
 export default function SkillList() {
     return (

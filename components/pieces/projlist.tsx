@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import FileIcon from '../_icons/fileicon';
-import RepoButton from '../_pieces/repobutton';
+import FileIcon from '../icons/fileicon';
+import RepoButton from '../pieces/repobutton';
 
 const projArray = [
     ['JukeBox', 

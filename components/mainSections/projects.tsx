@@ -1,5 +1,5 @@
-import SkillList from '../_pieces/skilllist';
-import ProjList from '../_pieces/projlist';
+import SkillList from '../pieces/skilllist';
+import ProjList from '../pieces/projlist';
 
 export default function Projects() {
     return (

@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import { useState } from "react";
 
-import PlusIcon from '../_icons/plus';
-import MinusIcon from '../_icons/minus';
+import PlusIcon from '../icons/plus';
+import MinusIcon from '../icons/minus';
 
 export default function PassGen() {
   

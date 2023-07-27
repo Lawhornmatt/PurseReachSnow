@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { useState } from "react";
-import BurgerIcon from '../_icons/burger';
+import BurgerIcon from '../icons/burger';
 
 export default function MobileNav() {
 
@@ -24,8 +24,8 @@ export default function MobileNav() {
                          ['Bio',      'bio'],
                          ['Resumé',   'resume'],
                          ['Contact',  'contact'],
-                       ].map(([title, unique]) => (
-                         <Link onClick={toggleMenu} id={unique} key={unique} href={`#${unique}`} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">{title}</span></Link>
+                       ].map(([title, undrtitle]) => (
+                         <Link onClick={toggleMenu} key={`mobile${undrtitle}`} href={`#${undrtitle}`} className="bg-leaf w-full h-16 text-3xl mb-1 mr-1 text-center flex items-center justify-center"><span className="sm:tracking-navbar">{title}</span></Link>
                       ))}
                   </div>
               )}
