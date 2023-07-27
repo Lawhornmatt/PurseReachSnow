@@ -16,13 +16,13 @@ export default function DesktopNav() {
 
             <div className='grow flex justify-around'>
                 {[
-                   ['Projects', '#projects'],
-                //    ['Skills',   '#skills'],
-                   ['Bio',      '#bio'],
-                   ['Resumé',   '#resume'],
-                   ['Contact',  '#contact'],
-                 ].map(([title, url]) => (
-                    <Link href={url} className="text-2xl md:text-3xl ml-1 text-center flex items-center justify-center">
+                   ['Projects', 'projects',],
+                // ['Skills',   'skills',],
+                   ['Bio',      'bio',],
+                   ['Resumé',   'resume',],
+                   ['Contact',  'contact',],
+                 ].map(([title, unique]) => (
+                    <Link id={unique} key={unique} href={`#${unique}`} className="text-2xl md:text-3xl ml-1 text-center flex items-center justify-center">
                         <span className="lg:tracking-navbar">{title}</span>
                     </Link>
                 ))}
