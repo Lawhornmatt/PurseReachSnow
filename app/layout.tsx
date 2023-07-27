@@ -65,7 +65,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         <html lang="en">
           <body className= {`${raleway.className} flex flex-col bg-mint text-cymru sm:text-2xl motion-safe:animate-fadeIn`}>
            <MobileNav />
-            {/* {children} */}
+            {children}
           </body>
         </html>
       </StrictMode>
