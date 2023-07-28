@@ -26,7 +26,7 @@ export default function Projects() {
 
         <SkillList />
 
-        <div id='bio' className='col-span-2 lg:col-span-3 flex flex-col'>
+        <article id='bio' className='scroll-mt-20 col-span-2 lg:col-span-3 flex flex-col'>
           <h2 className='mb-4 text-cymru italic flex-1 font-light text-md text-left xsml:text-xl'>
             A gist of what I do:
           </h2>
@@ -45,7 +45,7 @@ export default function Projects() {
             online communities is a goal of mine. I am also looking to utilize tech within the field of Geology, e.g. data-science 
             for novel data analysis and web development to reach the public with environmental information in engaging ways.
           </p>
-        </div>
+        </article>
 
       </section>
     )
