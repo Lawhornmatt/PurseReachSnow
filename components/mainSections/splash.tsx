@@ -3,7 +3,7 @@ import SocialMediaLinks from "../pieces/medialinks";
 export default function Splash() {
     return (
       // min-h-[80%] space-y-16
-      <section id='splash' className="md:min-h-[85vh] flex flex-col gap-4 md:flex-row-reverse mt-24 md:mt-0 md:px-16 sm:font-medium">
+      <section id='splash' className="md:min-h-[85vh] flex flex-col gap-4 md:flex-row-reverse mt-24 md:mt-0 md:mx-16 2xl:mx-40 sm:font-medium">
 
           <article className="md:w-2/3 flex flex-col justify-center">
             <h1 className="font-bold mb-4 text-5xl lg:text-6xl xl:text-7xl text-center md:text-right">

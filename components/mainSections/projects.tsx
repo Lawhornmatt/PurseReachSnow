@@ -3,7 +3,7 @@ import ProjList from '../pieces/projlist';
 
 export default function Projects() {
     return (
-      <section id="projects" className="scroll-mt-20 grid grid-cols-2 lg:grid-cols-3 gap-4 w-fill px-4 mt-16 mb-4 sm:px-16 sm:font-medium sm:text-4xl">
+      <section id="projects" className="scroll-mt-20 grid grid-cols-2 lg:grid-cols-3 gap-4 w-fill mx-4 mt-16 mb-4 sm:mx-16 2xl:mx-40 sm:font-medium sm:text-4xl">
 
         <div className='-mb-4 col-span-2 lg:col-span-3 flex flex-col'>
           <h1 className="text-virid italic flex-1 font-light text-4xl text-left xsml:text-5xl">
