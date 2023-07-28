@@ -1,10 +1,45 @@
+import SocialMediaLinks from "../pieces/medialinks";
+
 export default function Contact() {
   return (
-    <section id="contact" className="scroll-mt-20 flex sm:pl-16 sm:pt-32 sm:pr-32 sm:font-medium sm:text-4xl">
-      <article className="mt-4 mb-4">
-        <h1 className="mb-4 flex-1 font-bold text-4xl text-center xsml:text-5xl">Contacts</h1>
-        <p className="text-2xl text-center xsml:text-left xsml:ml-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis tincidunt ornare. Curabitur non nisl molestie, volutpat leo vitae, vulputate est. In hac habitasse platea dictumst. Etiam et arcu vel felis dignissim dapibus. Nunc eu lobortis nibh, a lobortis leo. Quisque nunc arcu, finibus a maximus eget, luctus vel elit. Quisque ornare pellentesque nisi, a mollis mi laoreet in. Fusce rutrum, lorem eget vehicula porttitor, orci sem cursus lacus, ut sagittis nisi nisi aliquet diam. Donec sed est nunc. Sed rhoncus non tortor sit amet cursus.</p>
-      </article>
+    <section id="contact" className="scroll-mt-20 flex flex-col mx-4 mt-16 mb-4 sm:mx-16 2xl:mx-40">
+      <h1 className="text-virid italic grow mb-4 font-light text-4xl text-left xsml:text-5xl">
+        Contact
+      </h1>
+
+      <div className="flex flex-col gap-4 md:flex-row-reverse mt-24 md:mt-0">
+        
+          <article className="md:w-2/3 flex flex-col justify-center">
+            <h1 className="font-bold mb-4 text-5xl lg:text-6xl xl:text-7xl text-center md:text-right">
+              Matthew Lawhorn
+            </h1>
+
+            {/* Old Blurb:
+            Full-stack Developer interested in data science & geology, open source software, and building better online communities */}
+
+            {/* Short blurb for mobile view */}
+            <p className="md:hidden text-2xl text-center">
+              Full-stack Developer specializing in MERN tech stack, interested in open source software and building better online communities
+            </p>
+
+            {/* Extended summary for viewports larger than mobile */}
+            <p className="hidden md:inline text-3xl italic font-semibold opacity-75 text-right">
+              Full-stack Web Developer
+            </p>
+            <p className="hidden md:inline mt-4 text-2xl text-right">
+              Designing and building modern reactive web apps for freelance but looking to join a team
+            </p>
+            <p className="hidden md:inline mt-4 text-2xl text-right">
+              Currently exploring tools like Next.js, SvelteKit, and Electron.js
+            </p>
+            <p className="hidden md:inline mt-4 text-2xl text-right">
+              Interested in web accessibility, open-source projects, and the intersection of data-science and geology
+            </p>
+          </article>
+
+        <SocialMediaLinks />
+      </div>
+
     </section>
   )
 };
