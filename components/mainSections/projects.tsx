@@ -30,7 +30,7 @@ export default function Projects() {
           <h2 className='mb-4 text-cymru italic flex-1 font-light text-md text-left xsml:text-xl'>
             A gist of what I do:
           </h2>
-          <p className="mb-4 text-2xl text-center indent-6 xsml:text-left xsml:ml-2">
+          <p className="mb-4 text-md md:text-2xl text-center indent-6 xsml:text-left xsml:ml-2">
             I am a junior full-stack developer with a Bachelors in Geology from UT at El Paso. 
             I've been a project manager / assistant production manager at a plant 
             and for nearly a decade I was in the service industry. 
@@ -38,7 +38,7 @@ export default function Projects() {
             the support of the amazing folks I met along the way, 
             and I build cutting-edge web apps.
           </p>
-          <p className="text-2xl text-center indent-6 xsml:text-left xsml:ml-2">
+          <p className="text-md md:text-2xl text-center indent-6 xsml:text-left xsml:ml-2">
             In 2022, I completed a Full-Stack Web Development certification program by the University of Texas at Austin - CPE. 
             Since then I have explored more of what makes me interested in web development, e.g. web accessibility, 
             open source projects, and the independent web. Learning how to create safer, stronger, more equitable 
