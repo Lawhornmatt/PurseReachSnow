@@ -13,7 +13,7 @@ export default function SocialMediaLinks() {
             md:flex-col 
             gap-4 md:gap-12 
             justify-around md:justify-center 
-            items-start 
+            items-center md:items-start
             text-2xl 
             lg:tracking-navbar">
 
