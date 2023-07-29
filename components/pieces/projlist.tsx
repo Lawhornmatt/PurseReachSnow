@@ -54,7 +54,7 @@ function returnIcon(icon: string) {
 export default function ProjList() {
     return (
         projArray.map(([title, deployURL, repoURL, description, icon]) => (
-            <div className='col-span-2 sm:col-span-1 flex flex-row p-1 my-2 justify-between items-center rounded-md w-fill bg-robin'>
+            <div key={`projlist${title}`} className='col-span-2 sm:col-span-1 flex flex-row p-1 my-2 justify-between items-center rounded-md w-fill bg-robin'>
                 <Link href={deployURL} className='flex flex-row grow pr-2 justify-between items-center'>
 
                     {returnIcon(icon)}

@@ -32,7 +32,7 @@ export default function Projects() {
           </h2>
           <p className="mb-4 text-md md:text-2xl text-center indent-6 xsml:text-left xsml:ml-2">
             I am a junior full-stack developer with a Bachelors in Geology from UT at El Paso. 
-            I've been a project manager / assistant production manager at a plant 
+            I have been a project manager / assistant production manager at a plant 
             and for nearly a decade I was in the service industry. 
             I take the skills and lessons from those experiences, 
             the support of the amazing folks I met along the way, 
