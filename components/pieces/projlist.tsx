@@ -8,7 +8,7 @@ import ProfileIcon from '../icons/profile';
 
 const projArray = [
     ['This Portfolio', 
-    ' ', 
+    '#splash', 
     'https://github.com/Lawhornmatt/PurseReachSnow', 
     'Next.js, JSX, TypeScript, Tailwind',
     'profile-icon'

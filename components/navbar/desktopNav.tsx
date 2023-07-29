@@ -20,7 +20,7 @@ export default function DesktopNav() {
                 // ['Skills',   'skills',],
                    ['Bio',      'bio',],
                    ['Resumé',   'resume',],
-                   ['Contact',  'contact',],
+                // ['Contact',  'contact',],
                  ].map(([title, undrtitle]) => (
                     <Link key={`dsktop${undrtitle}`} href={`#${undrtitle}`} className="text-2xl md:text-3xl ml-1 text-center flex items-center justify-center">
                         <span className="lg:tracking-navbar">{title}</span>
