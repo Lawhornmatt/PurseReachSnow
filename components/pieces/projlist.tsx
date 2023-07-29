@@ -34,7 +34,7 @@ const projArray = [
     ['Tech Blog', 
     'https://techblog-lawhornmatt.herokuapp.com/', 
     'https://github.com/Lawhornmatt/TechBlog',
-    '',
+    'Express, Sequelize, Handlebars, MVC, MySQL',
     'play-icon'
     ]];
 
