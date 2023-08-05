@@ -50,7 +50,7 @@ export default function SkillList() {
                 ].map(([icon, skill]) => (
                     <div key={`sklist${skill}`} className='p-2 flex flex-row justify-between items-center border-solid border-2 border-cymru rounded-md'>
                         {icon}
-                        <p className='pl-1 text-cymru text-center font-light text-md text-left xsml:text-xl'>{skill}</p>
+                        <p className='pl-1 text-cymru font-light text-md text-left xsml:text-xl'>{skill}</p>
                     </div>
                 ))}
             </div>  
