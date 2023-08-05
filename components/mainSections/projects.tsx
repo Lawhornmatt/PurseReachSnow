@@ -12,6 +12,9 @@ export default function Projects() {
           <h2 className='text-cymru italic flex-1 font-light text-lg text-left xsml:text-xl'>
             Selected projects:
           </h2>
+          {/* <h2 className='text-virid flex-1 font-light text-md text-center xsml:text-lg'>
+            Click any card to visit the live deployment
+          </h2> */}
         </div>
 
         <ProjList />

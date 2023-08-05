@@ -1,6 +1,7 @@
 import AstroIcon from "../icons/tech/astro";
 import CSSIcon from "../icons/tech/css";
 import ElectronIcon from "../icons/tech/electron";
+import FirebaseIcon from "../icons/tech/firebase";
 import GitIcon from "../icons/tech/git";
 import GraphQLIcon from "../icons/tech/graphql";
 import HTMLIcon from "../icons/tech/html";
@@ -12,6 +13,7 @@ import MySQLIcon from "../icons/tech/mysql";
 import NextIcon from "../icons/tech/next";
 import NodeIcon from "../icons/tech/node";
 import ReactIcon from "../icons/tech/react";
+import SvelteIcon from "../icons/tech/svelte";
 import TailwindIcon from "../icons/tech/tailwind";
 import TSIcon from "../icons/tech/typescript";
 import ViteIcon from "../icons/tech/vite";
@@ -29,6 +31,7 @@ export default function SkillList() {
                     [AstroIcon('skliconAstro'), 'AstroJS'],
                     [CSSIcon('skliconCSS'), 'CSS3'],
                     [ElectronIcon('skliconElec'), 'ElectronJS'],
+                    [FirebaseIcon(true, 'skliconFireb'), 'Firebase'],
                     [GitIcon('#1f1115', '#EDF5E6', 'skliconGit'), 'Git'],
                     [GraphQLIcon('skliconGrQL'), 'GraphQL'],
                     [HTMLIcon('skliconHTML'), 'HTML5'],
@@ -40,6 +43,7 @@ export default function SkillList() {
                     [NextIcon('skliconNext'), 'NextJS'],
                     [NodeIcon('skliconNode'), 'NodeJS'],
                     [ReactIcon('skliconReact'), 'React'],
+                    [SvelteIcon(true, 'skliconSvlt'), 'Svelte'],
                     [TailwindIcon('skliconTW'), 'Tailwind'],
                     [TSIcon('skliconTS'), 'TypeScript'],
                     [ViteIcon('#1f1115', '#EDF5E6', 'skliconVite'), 'Vite'],

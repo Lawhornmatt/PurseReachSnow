@@ -13,10 +13,16 @@ const projArray = [
     'Next.js, JSX, TypeScript, Tailwind',
     'profile-icon'
     ],
+    ['FireKit Demo', 
+    'https://svelte-fireship-vrcl.vercel.app/', 
+    'https://github.com/Lawhornmatt/SvelteFireship', 
+    'SvelteKit, Firebase, TypeScript, Tailwind, DaisyUI, Full-Stack Web App',
+    'profile-icon'
+    ],
     ['JukeBox', 
     'https://jukebox-project3.herokuapp.com/', 
     'https://github.com/Lawhornmatt/Jukebox-vite', 
-    'MongoDB, Express, React, Node.js, MERN Stack, Vite Dev Server, GraphQL',
+    'MongoDB, Express, React, Node.js, Vite Dev Server, GraphQL, Full-Stack Web App',
     'sound-icon'
     ],
     ['JATE', 
