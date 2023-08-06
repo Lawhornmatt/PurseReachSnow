@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Matt Lawhorn Portfolio',
-  description: 'Matt Lawhorn React application showcase built with Next.js',
+  description: "Matt Lawhorn's React application showcase built with Next.js",
   generator: 'Next.js',
   applicationName: 'PRS | Personal React Showcase',
   // referrer: 'origin-when-cross-origin', // Come back and set this when I am more educated about it
