@@ -55,19 +55,18 @@ import Link from "next/link";
 
 import MobileNav from '../components/navbar/mobileNav';
 
-import { StrictMode } from 'react';
-
 import { raleway } from './font';
+
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
-      <StrictMode>
-        <html lang="en">
-          <body className= {`${raleway.className} flex flex-col bg-mint text-cymru sm:text-2xl motion-safe:animate-fadeIn`}>
-           <MobileNav />
-            {children}
-          </body>
-        </html>
-      </StrictMode>
+    <html lang="en">
+      <body className= {`${raleway.className} flex flex-col bg-mint text-cymru sm:text-2xl motion-safe:animate-fadeIn`}>
+        <MobileNav />
+        {children}
+        <Analytics />
+      </body>
+    </html>
   );
 };
